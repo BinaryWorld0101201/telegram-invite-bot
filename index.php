@@ -17,7 +17,12 @@ $id = "https://t.me/carryprotocol";
 
 if (!$me['bot']) {
     $MadelineProto->messages->sendMessage(['peer' => '@okayandokay', 'message' => "Hi!\n Testing<3"]);
-  
+
+ $pwr_chat = $MadelineProto->get_pwr_chat($id);
+foreach ($pwr_chat['participants'] as $participant) {
+   echo $participant;
+echo "<br>";
+}
     
   
 }
