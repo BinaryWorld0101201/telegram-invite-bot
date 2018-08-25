@@ -9,14 +9,23 @@ $MadelineProto = new \danog\MadelineProto\API('session.madeline');
 $MadelineProto->start();
 
 $me = $MadelineProto->get_self();
+$id = "carryprotocol";
+
 
 \danog\MadelineProto\Logger::log($me);
 
 if (!$me['bot']) {
     $MadelineProto->messages->sendMessage(['peer' => '@okayandokay', 'message' => "Hi!\n Testing<3"]);
 
+
+    
+    
+    
     try {
-        $MadelineProto->messages->importChatInvite(['hash' => 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg']);
+    $Chat = $MadelineProto->get_pwr_chat($id);
+    
+
+
     } catch (\danog\MadelineProto\RPCErrorException $e) {
     }
 
