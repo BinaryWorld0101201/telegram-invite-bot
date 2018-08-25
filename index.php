@@ -19,7 +19,7 @@ if (!$me['bot']) {
    
 
 
-$Updates = $MadelineProto->channels->inviteToChannel(['channel' => $id, 'users' => [okayandokay], ]);
+$Updates = $MadelineProto->channels->inviteToChannel(['channel' => $id, 'users' => "okayandokay" ]);
 
 }
 
