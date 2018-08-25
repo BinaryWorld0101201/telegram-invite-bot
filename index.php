@@ -19,11 +19,14 @@ if (!$me['bot']) {
    
 $Chat = $MadelineProto->get_pwr_chat($id);
 
-
+$okay  = array();
+$okay = $Chat['participants'][0];
 
 }
 
-print_r($Chat);
+
+
+print_r($okay);
 
 
 
