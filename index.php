@@ -24,13 +24,10 @@ $okay  = array();
 foreach($Chat['participants'] as $xx){
 
     
-try {
-   echo $xx['user']['username'];
-   throw new Exception('Something bad');
-} catch (Exception $e) {
-    
-}
-    
+ if(!$xx['user']['username']=NULL){
+     echo $xx['user']['username'];
+ }
+
     
     
 echo "<br>";
