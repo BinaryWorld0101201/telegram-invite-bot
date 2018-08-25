@@ -20,13 +20,17 @@ if (!$me['bot']) {
 $Chat = $MadelineProto->get_pwr_chat($id);
 
 $okay  = array();
-$okay = $Chat['participants'][0];
 
+foreach($Chat['participants'] as $xx){
+ $okay = $xx['user']['username'];
+echo $okay;
+echo "<br>";
+}
 }
 
 
 
-print_r($okay);
+
 
 
 
