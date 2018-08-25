@@ -27,17 +27,6 @@ foreach($Chat['participants'] as $xx){
  if($xx['user']['username']){
      echo $xx['user']['username'];
      echo "<br>";
- }
-
-  
-
-}
-}
-
-
-
-
-
-
+ }}}
 
 ?>
