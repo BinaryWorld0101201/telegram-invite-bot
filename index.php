@@ -23,14 +23,12 @@ if (!$me['bot']) {
     
     try {
     $Chat = $MadelineProto->get_pwr_chat($id);
-    
-
-
     } catch (\danog\MadelineProto\RPCErrorException $e) {
     }
 
     $MadelineProto->messages->sendMessage(['peer' => 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg', 'message' => 'Testing MadelineProto!']);
 }
 echo 'OK, done!'.PHP_EOL;
+echo $Chat ;
 
 ?>
