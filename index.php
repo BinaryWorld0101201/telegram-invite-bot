@@ -10,7 +10,7 @@ $MadelineProto->start();
 
 
 $me = $MadelineProto->get_self();
-$id = "https://t.me/projectfollor";
+$id = "https://t.me/refereumtalk";
 
 
 \danog\MadelineProto\Logger::log($me);
