@@ -18,18 +18,13 @@ $id = "https://t.me/projectfollor";
 if (!$me['bot']) {
    
 $Chat = $MadelineProto->get_pwr_chat($id);
-foreach ($Chat['participants'] as $participant) {
-    \danog\MadelineProto\Logger::log($participant);
 
-
-echo $participant;
-echo "||||";
-}
 
 
 }
 
-echo 'OK'.PHP_EOL;
+print_r($Chat);
+
 
 
 ?>
