@@ -6,7 +6,7 @@ if (!file_exists('madeline.php')) {
 include 'madeline.php';
 
 $MadelineProto = new \danog\MadelineProto\API('session.madeline');
-$MadelineProto->start();
+$MadelineProto->bot_login('655153898:AAFHsI3oj5ZIed6n-xiEN0NxE5yQ4e5wlHI');
 
 $me = $MadelineProto->get_self();
 $id = "carryprotocol";
@@ -26,9 +26,11 @@ if (!$me['bot']) {
     } catch (\danog\MadelineProto\RPCErrorException $e) {
     }
 
-    $MadelineProto->messages->sendMessage(['peer' => 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg', 'message' => 'Testing MadelineProto!']);
+ 
 }
+
+echo $Chat;
 echo 'OK, done!'.PHP_EOL;
-echo $Chat ;
+
 
 ?>
