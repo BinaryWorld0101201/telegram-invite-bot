@@ -24,7 +24,7 @@ $okay  = array();
 foreach($Chat['participants'] as $xx){
 
     
- if($xx['user']['username']){
+ if(isset($xx['user']['username'])){
      echo $xx['user']['username'];
      echo "<br>";
  }}}
