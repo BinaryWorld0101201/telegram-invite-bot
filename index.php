@@ -22,8 +22,17 @@ $Chat = $MadelineProto->get_pwr_chat($id);
 $okay  = array();
 
 foreach($Chat['participants'] as $xx){
- $okay = $xx['user']['username'];
-echo $okay;
+
+    
+try {
+   echo $xx['user']['username'];
+   throw new Exception('Something bad');
+} catch (Exception $e) {
+    
+}
+    
+    
+    
 echo "<br>";
 }
 }
