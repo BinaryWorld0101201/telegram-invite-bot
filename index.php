@@ -10,7 +10,7 @@ $MadelineProto->start();
 
 
 $me = $MadelineProto->get_self();
-$id = "https://t.me/refereumtalk";
+$id = "https://t.me/binancesupport_agent";
 
 
 \danog\MadelineProto\Logger::log($me);
